@@ -148,6 +148,17 @@ Check out developer.mozilla.com to see these array functions. to see a ton of ex
 
 ```Javascript
 
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5)); //Here we are making the current value 5 and adding the accumulator to it.
+// expected output: 15
+
 ```
 
 ## .forEach()
