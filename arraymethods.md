@@ -163,7 +163,12 @@ console.log(array1.reduce(reducer, 5)); //Here we are making the current value 5
 
 ## .forEach()
 
+ When we use Array.forEach() we are looping through each element THEN calling the function on it.As mentioned in the Side effect section is that .forEach() does not return a value.When you need to do something with returned data .forEach() is a good option.
+
 ### .forEach() use cases
+
+Looping over a list of elements and adding an event listener/or something like that.
+When you dont need to return data.
 
 ### foreach() syntax
 
@@ -173,21 +178,47 @@ console.log(array1.reduce(reducer, 5)); //Here we are making the current value 5
 
 ## .some()
 
+Array.some will check if some elements in the array pass a condition.
+Another way to think of .some is to say - at least one is "this" - i.e if at least one person is legal drinking age
+
+We can also look at it a short circuted for each - since you might have to run a for each till you've run the function on the data you're looking for - you cannot stop a forEach but with .some it can stop when a condition returns true.
+
 ### .some() syntax
 
 ```Javascript
+const array = [1, 2, 3, 4, 5];
+
+const even = (element) => {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
 
 ```
 
 ## .every()
 
+Array.every will check if all elements pass a condition.
+Another way to think of .every is to say - all have to be "this" - i.e if all person are legal drinking age we can go out.
+
 ### .every() syntax
 
 ```Javascript
 
+const array = [1, 2, 3, 4, 5];
+const allEven = (element) => {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+console.log(array.every(even));
+// expected output: false
 ```
 
 ## .includes()
+
+Array.includes will check if an array includes a given element.
 
 ### .includes() syntax
 
