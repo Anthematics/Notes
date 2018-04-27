@@ -4,7 +4,7 @@
 
 Hitting Ctrl+F will allow you to search any of these topics (but you probably already know that.)
 
-## Table Of contents
+## Table Of Contents
 
 1. Thinking about array methods.
 
@@ -32,7 +32,7 @@ Hitting Ctrl+F will allow you to search any of these topics (but you probably al
 
 13. Array.from()
 
-14. Array.from() takes a secondary map arg
+14. Array.from()
 
 15. Array.of()
 
@@ -42,11 +42,11 @@ Hitting Ctrl+F will allow you to search any of these topics (but you probably al
 
 18. Object.entries()
 
-19. Array spread - converts iterable to array
+19. Array spread
 
-20. Array spread - Concats arrays
+20. Array spread
 
-21. Array Spread + Slice. Don't splice - remove an item from an array.
+21. Array Spread
 
 22. Object Spread
 
