@@ -6,6 +6,8 @@ Hitting Ctrl+F will allow you to search any of these topics (but you probably al
 
 ## Table Of Contents
 
+###General Information
+
 1. Thinking about array methods.
 
 2. Mutability.
@@ -16,45 +18,47 @@ Hitting Ctrl+F will allow you to search any of these topics (but you probably al
 
 5. Side effects
 
-6. .filter()
+### Array methods
 
-7. .map()
+1. .filter()
 
-8. .reduce()
+2. .map()
 
-9. .forEach()
+3. .reduce()
 
-10. .some()- can be used as a short circuit forEach
+4. .forEach()
 
-11. .every()
+5. .some()- can be used as a short circuit forEach
 
-12. .includes() (why not contains?)
+6. .every()
 
-13. Array.from()
+7. .includes() (why not contains?)
 
-14. Array.from()
+8. Array.from()
 
-15. Array.of()
+9. Array.from()
 
-16. Object.values()
+10. Array.of()
 
-17. Object.keys()
+11. Object.values()
 
-18. Object.entries()
+12. Object.keys()
 
-19. Array spread
+13. Object.entries()
 
-20. Array spread
+14. Array spread
 
-21. Array Spread
+25. Array spread
 
-22. Object Spread
+26. Array Spread
 
-23. Function Rest
+27. Object Spread
 
-24. Object.freeze()
+28. Function Rest
 
-25. Object.seal()
+29. Object.freeze()
+
+30. Object.seal()
 
 ## On array methods
 
