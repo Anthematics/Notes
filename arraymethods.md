@@ -40,25 +40,27 @@ Hitting Ctrl+F will allow you to search any of these topics (but you probably al
 
 10. Array.of()
 
-11. Object.values()
+11. Array spread
 
-12. Object.keys()
+12. Array spread
 
-13. Object.entries()
+13. Array Spread
 
-14. Array spread
+14. Object Spread
 
-25. Array spread
+15. Function Rest
 
-26. Array Spread
+### Object Methods
 
-27. Object Spread
+1. Object.values()
 
-28. Function Rest
+2. Object.keys()
 
-29. Object.freeze()
+3. Object.entries()
 
-30. Object.seal()
+4. Object.freeze()
+
+5. Object.seal()
 
 ## On array methods
 
@@ -218,17 +220,29 @@ console.log(array.every(even));
 
 ## .includes()
 
-Array.includes will check if an array includes a given element.
+Array.includes will check if an array includes a given value. The difference between .some() & .includes() is . Note:it is not .contains()because it causes issues with Mootools (an older JS framework) - essentially mootools modified an array prototype causing issues with the way the mootools works online (js cant add it now as it would break mootools websites).
+
+Difference between some and includes
+
+.some() is based on a condition you write yourself .includes() takes a passed in string or value and its checking to see if the value is there (and you dont have to condition check with .includes()).Also includes does not do what is called a Deep check - i.e if you have an object and you want to check if that object is in an array .includes() will not do a 'deep check' for equality. i.e if you create 2 objects have the same values those are not really the same values, they are 2 seperate values - it will check if the original object is in the array but will not check if an object that looks exactly the same is in an array.
 
 ### .includes() syntax
 
 ```Javascript
-
+const music = ['Black Keys','Spoon','White Rabbits', 'Broken Bells', 'The Shins']
+console.log(music.includes('Spoon'));
 ```
+^ this would return true.
 
-## .arrayFrom()
+## Array.From()
 
-### .arrayFrom() syntax
+Array.From will take anything with a length or iterable and it will create it as an array with that many slots. if you need an array with 10 slots you can create an array with exactly that amount of space from an object.
+
+### Array.from use cases
+
+if you want to create a leaderboard and leave it empty or an array of promises using an incrimented number - replaces lots of older things you'd do with splice and slice.
+
+### Array.From() syntax
 
 ```Javascript
 
@@ -236,26 +250,34 @@ Array.includes will check if an array includes a given element.
 
 ## .arrayOf()
 
+Array.of() will take a number of arguments (as many as you want) and returns it as an array.
+<!-- side note - could I make a new array from the first element of multiple arrays ? -->
 ### .arrayOf() syntax
 
 ```Javascript
 ```
 
-## Object.values
 
-### Object.values syntax
+## Object.Values()
+
+Object.Values Will return an array of values from an object- giving you an array of just the values
+
+### Object.Values syntax
 
 ```Javascript
 ```
 
 ## Object.keys
 
+Object.keys will return an array of keys from an object - giving you an array of the keys.
 ### Object.keys syntax
 
 ```Javascript
 ```
 
 ## Object.entries
+
+###Object.entries use case
 
 ### Object.entries syntax
 
