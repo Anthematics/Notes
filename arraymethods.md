@@ -196,7 +196,6 @@ console.log(array1.reduce(reducer, 5)); //Here we are making the current value 5
 
 // this will output the numbers 1-5 vertically
 ```
-
 ### .some()
 
 Array.some will check if some elements in the array pass a condition.
@@ -260,7 +259,7 @@ Array.from will take anything with a length or iterable and it will create it as
 
 #### Array.from use cases
 
-if you want to create a leaderboard and leave it empty or an array of promises using an incrimented number - replaces lots of older things you'd do with splice and slice.
+if you want to create a leaderboard and leave it empty or an array of promises using an incrimented number - replaces lots of older things you'd do with splice and slice. You can create an array from variables (including strings) or map them.
 
 #### Array.from() syntax
 
@@ -276,9 +275,19 @@ console.log(Array.from([1, 2, 3], x => x + x));
 Array.of() will take a number of arguments (as many as you want) and returns it as an array.
 <!-- side note - could I make a new array from the first element of multiple arrays ? -->
 
+## .arrayOf() Use Case
+
+I found this myself ! with array of you can actually take variables and turn them into arrays.
+
+
 #### .arrayOf() syntax
 
 ```Javascript
+
+Array.of(1);         // [1]
+Array.of(1, 2, 3);   // [1, 2, 3]
+Array.of(undefined); // [undefined]
+
 ```
 
 ### Array.spread
