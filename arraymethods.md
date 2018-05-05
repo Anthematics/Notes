@@ -114,12 +114,20 @@ Filter is a method on an array that takes a callback and you can (in that callba
 
 IF YOU ARE SEARCHING THROUGH EXISTING DATA YOU SHOULD FILTER IT.
 
+You can filter by booleans , Datatypes (all sorts of stuff).
+
 #### filter() syntax
 
 ```Javascript
 
 const totalPurchases = transactions.filter(transaction => transaction.type === 'purchase').length
 
+
+const bouncer = (arr) => {
+  return arr.filter(Boolean)
+}
+
+// Filters for true values (FCC Challange ^^)
 ```
 
 ### .map()
@@ -312,8 +320,8 @@ var arr2 = [3, 4, 5];
 arr1 = arr1.concat(arr2);
 // With spread syntax this becomes:
 
-var arr1 = [0, 1, 2];
-var arr2 = [3, 4, 5];
+let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
 arr1 = [...arr1, ...arr2];
 ```
 
