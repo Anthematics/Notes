@@ -1,5 +1,18 @@
+#Object Function Notes
 
-// Bind()
+##Table Of Contents
+
+## 1. General Information
+  1.
+  2.
+  
+## 2. Object Methods
+  1. Bind()
+  2. Call()
+  3. Apply()
+
+
+### Bind()
 
 // A define the person
 let aboutJason = {name: "Jason",age: 30, location: 'Toronto'}
@@ -17,10 +30,13 @@ const context = greetingBind.bind(aboutJason)
 //D log the object
 console.log(context())
 
-// Call()
+### .call()
 
-let aboutQT = {name:'QT'}
+### .call() use cases
 
+## .call() example: 
+
+```let aboutQT = {name:'QT'}
 
 const greetingCall = function(a,b,c){
   return `Welcome ${this.name} to ${a} ${b}`
@@ -28,12 +44,15 @@ const greetingCall = function(a,b,c){
 
 // C: First param in call is what we are setting 'this' too
 console.log(greetingCall.call(aboutQT,'Kathmandu', 'we have great food'))
+``` 
+### apply()
 
-// Apply()
+### .apply() use cases
+
+## .apply() example:
 
 
-
-// this is the first arguement to the apply function - the object
+// this is the first argument to the apply function - the object
 const bear = {
   name: 'Oscar'
 }
