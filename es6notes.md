@@ -2,7 +2,7 @@
 
 1. Let & Const vs var
 
-2. Arrow functions and defaulr arguements
+2. Arrow functions and default arguements
 
 3. Template strings & string improvements
 
