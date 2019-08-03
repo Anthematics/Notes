@@ -1,4 +1,4 @@
-# ARRAY METHOD NOTES 
+# ARRAY FUNCTION NOTES 
 
 ## QUICK NOTES
 
@@ -9,17 +9,15 @@ Unless mentioned other wise most of the content is from https://syntax.fm/ - epi
 
 ## 1. General Information
 
-  1. Thinking about array methods.
+  1. Mutability.
 
-  2. Mutability.
+  2. Chaining Methods.
 
-  3. Chaining Methods.
+  3. True/False/Truthy/Falsy
 
-  4. True/False/Truthy/Falsy
+  4. Side effects
 
-  5. Side effects
-
-  6. Deep Cloning
+  5. Deep Cloning
 
 ## 2. Array methods
 
@@ -66,10 +64,6 @@ Unless mentioned other wise most of the content is from https://syntax.fm/ - epi
   7. Object.assign()
 
 ## General Information
-
-### Thinking about array methods
-
-Imagine each array method is like a machine.Raw materials are the input and the result is the output.The machine is the method itself.
 
 ### Mutability
 
