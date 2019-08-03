@@ -12,7 +12,11 @@
   3. Apply()
 
 
-### Bind()
+### .bind()
+
+### .bind() use cases
+
+### .bind() example
 
 // A define the person
 let aboutJason = {name: "Jason",age: 30, location: 'Toronto'}
