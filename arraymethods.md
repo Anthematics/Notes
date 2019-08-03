@@ -1,4 +1,4 @@
-# ARRAY METHOD NOTES - WES BOS/Scott Tolinski Syntax Podcast Notes (episode 43)
+# ARRAY METHOD NOTES 
 
 ## QUICK NOTES
 
