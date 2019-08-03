@@ -52,7 +52,7 @@ console.log(greetingCall.call(aboutQT,'Kathmandu', 'we have great food'))
 ## .apply() example:
 
 
-// this is the first argument to the apply function - the object
+```this is the first argument to the apply function - the object
 const bear = {
   name: 'Oscar'
 }
@@ -66,7 +66,7 @@ const greetingApply = function(a,b,c){
 
 //First arguement to the ap
 console.log(greetingApply.apply(bear,greetingArgs))
-
+```
 
 
 
