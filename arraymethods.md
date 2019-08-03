@@ -100,7 +100,7 @@ If you do not need to return data you can use forEach - if you do then use a dif
 
 ### .filter()
 
-Filter is sort of a poor mans search. You can have a .filter method on the array and have a state coming in from the search and as you are typing you can have it filter through a number of items in an array.
+Filter is great for search. You can have a .filter method on the array and have a state coming in from the search and as you are typing you can have it filter through a number of items in an array.
 
 Filter is a method on an array that takes a callback and you can (in that callback) determine what is the item that will be filtered or passed through - you can use ANY conditional that returns a true or false. It will output a new array depending on the conditional (if it is met or not) the brand new array will be an array filtered by that condition.
 
